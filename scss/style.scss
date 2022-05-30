@@ -1,0 +1,57 @@
+
+@import '_varriable.scss';
+@import '_mixins.scss';
+@import '_extend';
+@import '_responsive.scss';
+@import '_theme-default.scss';
+@import '_btn';
+@import '_section_title';
+@import '_slick-nav.scss';
+
+
+
+// header
+@import 'header';
+
+// slider
+@import 'slider';
+
+// about
+@import 'offers';
+// about
+@import 'footer';
+
+@import 'bradcam';
+
+@import 'reason';
+
+@import '_latest_activites';
+
+
+@import 'causes';
+
+@import 'counter';
+
+@import 'voolenteer';
+
+@import '_news';
+
+
+@import '_donation';
+
+
+// other pages default
+
+// contact
+@import 'contact';
+
+// elements
+@import 'elements.scss';
+
+// blog
+@import 'blog';
+
+
+// blog part
+@import 'blog_part';
+
