@@ -1,19 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800|Yeseva+One&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800|Yeseva+One&display=swap");
-*{
+
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
+
 }
+
 /* line 1, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_extend.scss */
 body::-webkit-scrollbar {
   display: none;
 }
+
 body {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }
+
 .flex-center-start {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,199 +36,274 @@ body {
 
 
 /* service section */
-h1 {
-  font-family: 'Vidaloka', serif;
-  float: left;
-  width: 100%;
-  color: #000;
-  text-transform: uppercase;
-  margin-bottom: 60px;
-  font-size: 30px;
-  position: relative;
-  z-index: 3;
-}
-h1 span {
-  font-family: 'Vidaloka', serif;
-  display: block;
-  color: #000;
-  font-size: 150px;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  margin-top: 30px;
-}
-h1 a {
-  color: #fff;
-  font-weight: bold;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+/*Services Styles*/
+.img12 {
+  border-radius: 20px;
+  border-width: 10px;
 }
 
-section {
-  float: left;
-  width: 100%;
-  padding: 30px 0;
+.services {
+ margin-bottom: 0px;
   position: relative;
-  overflow: hidden;
-  background: #6F8D8A;
-}
-section:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #c5c85c;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23fab516' fill-opacity='1' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
-  z-index: 0;
-  -webkit-transform: scale(2);
-  -ms-transform: scale(2);
-  transform: scale(2);
-}
-h3 {
-  margin-bottom: 10px;
-  font-weight: bold;
-  font-family: 'Vidaloka', serif;
-  color: #000;
+  width: 1200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 100px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
-.btn-default {
+.services__box {
+  position: relative;
+  width: 450px;
+  height: 580px;
   background: #c5c85c;
-  color: #fff;
-  font-weight: 700;
-  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
-  font-size: 14px;
-}
-.card {
-  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
-  border: 10px solid #c5c85c;
-  margin-bottom: 100px;
-}
-.card-01 .card-body {
-  position:sticky;
-  padding-top: 50px;
-}
-
-.profile-box {
-  background-size: cover;
-  float: left;
-  width: 100%;
-  text-align: center;
-  padding: 30px 0;
-  position: relative;
+  border-radius: 20px;
   overflow: hidden;
 }
-.profile-box:before {
-  background-color: #777777;
- 
-  width: 100%;
-  position: absolute;
-  content: "";
-  left: -10%;
-  top: 0;
-  z-index: 0;
-}
-.profile-box img {
-  width: 170px;
-  height: 170px;
-  position: relative;
-  border: 5px solid #fff;
-}
-.social-box i {
-  border: 1px solid #c5c85c;
-  color: #c5c85c;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  line-height: 30px;
-}
-.social-box i:hover {
-  background: #c5c85c;
-  color: #fff;
-}
-.social-box a {
-  margin: 0 5px;
+
+.btn3 {
+  color: white;
+  margin-top: 20px;
+  border-radius: 50px;
+  width: 200px;
+  padding: 10px;
+  border: none;
+  background-color: #acaf50;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.card-01 .height-fix .card-img-overlay {
-  top: inherit;
-  color: #fff;
-  background: -moz-linear-gradient(top,  #1e5799 0%, #7db9e8 100%); /* FF3.6+ */
-background: -webkit-gradient (linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #1e5799 0%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #1e5799 0%,#7db9e8 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient (top,  #1e5799 0%,#7db9e8 100%); /* IE10+ */
-}
-.card-01 .height-fix .fa {
-  color: #fff;
-  font-size: 50px;
-  margin-right: 18px;
-}
-.card-01 .height-fix .card-img-top {
-  width: auto;
-  height: 100%;
+.btn3:hover {
+  color: #000;
+  background-color: white;
+  transform: skewY(5deg);
+  text-decoration: none;
+  cursor: pointer;
 }
 
-/*flipper-card*/
-.card-flipper {
-  position: relative;
-  float: left;
-  width: 100%;
-  text-align: center;
-  height: 450px;
+.services__box:hover .services__content {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
 }
 
-.card__front, .card__back {
+.services__box:hover .services__icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 100px;
+  top: 30px;
+  left: calc(50% - 40px);
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+
+
+.services__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background: var(--i);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 2;
+  -webkit-transition-delay: 0.25s;
+  transition-delay: 0.25s;
 }
 
-.card__back .card {
-  width: 100%;
-  height: 450px;
+.services__icon ion-icon {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: bold;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
 }
 
-.card__front, .card__back {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+.services__content {
+  position: relative;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 100px;
+  z-index: 1;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
 }
 
-.card__front {
-  background-color: transparent;
+.services__title {
+  margin: 10px 0 5px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
-.card__back {
-  background-color: #1e1e1e;
-  -webkit-transform: rotateY(-180deg);
-   -ms-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-  
+.services__description {
+  font-size: 15px;
+  font-weight: 400;
+  padding-top: 10px;
 }
 
-.card-flipper.effect__hover:hover .card__front {
-  -webkit-transform: rotateY(-180deg);
-  -ms-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
+@media (min-width: 768px) and (max-width: 991px) {
+
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+  /*Services Styles*/
+  .img12 {
+    border-radius: 20px;
+    border-width: 10px;
+  }
+
+  .services {
+    top: -100px;
+    margin: 0px;
+    position: relative;
+    width: 1200;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 100px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .services__box {
+    position: relative;
+    width: 250px;
+    height: 780px;
+    background: #acaf50;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .btn3 {
+    color: white;
+    margin-top: 20px;
+    border-radius: 50px;
+    width: 200px;
+    padding: 10px;
+    border: none;
+    background-color: #acaf50;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .btn3:hover {
+    color: #000;
+    background-color: white;
+    transform: skewY(5deg);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .services__box:hover .services__content {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+
+  }
+
+  .services__box:hover .services__icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    top: 30px;
+    left: calc(50% - 40px);
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+
+  .services__box:hover .services__icon ion-icon {
+    font-size: 4rem;
+    -webkit-transition-delay: 1s;
+    transition-delay: 1s;
+  }
+
+  .services__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--i);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 2;
+    -webkit-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+  }
+
+  .services__content {
+    position: relative;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 100px;
+    z-index: 1;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+  }
+
+  .services__title {
+    margin: 10px 0 5px 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .services__description {
+    font-size: 2px;
+    font-weight: 900;
+    padding-top: 5px;
+  }
 }
 
-.card-flipper.effect__hover:hover .card__back {
-  -webkit-transform: rotateY(0);
-  -ms-transform: rotateY(0);
-  transform: rotateY(0);
-}
-
-.card-flipper.effect__random.flipped .card__front {
-  -webkit-transform: rotateY(-180deg);
-  -ms-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-}
-
-.card-flipper.effect__random.flipped .card__back {
-  -webkit-transform: rotateY(0);
-  -ms-transform: rotateY(0);
-  transform: rotateY(0);
-}
+/*# sourceMappingURL=servicesection.css.map */
 
 /* line 13, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_extend.scss */
 .overlay::before {
@@ -232,7 +313,8 @@ background: -ms-linear-gradient (top,  #1e5799 0%,#7db9e8 100%); /* IE10+ */
 }
 
 /* line 18, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_extend.scss */
-.boxed-btn6, .boxed-btn6:hover {
+.boxed-btn6,
+.boxed-btn6:hover {
   background-image: -moz-linear-gradient(0deg, #24c0f1 0%, #4c9afe 100%);
   background-image: -webkit-linear-gradient(0deg, #24c0f1 0%, #4c9afe 100%);
   background-image: -ms-linear-gradient(0deg, #24c0f1 0%, #4c9afe 100%);
@@ -265,7 +347,8 @@ background: -ms-linear-gradient (top,  #1e5799 0%,#7db9e8 100%); /* IE10+ */
 }
 
 /* line 18, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_extend.scss */
-.boxed-btn6, .boxed-btn6:hover {
+.boxed-btn6,
+.boxed-btn6:hover {
   background-image: -moz-linear-gradient(0deg, #24c0f1 0%, #4c9afe 100%);
   background-image: -webkit-linear-gradient(0deg, #24c0f1 0%, #4c9afe 100%);
   background-image: -ms-linear-gradient(0deg, #24c0f1 0%, #4c9afe 100%);
@@ -277,6 +360,7 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+
 /* hr */
 
 /* line 13, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_theme-default.scss */
@@ -290,7 +374,8 @@ body {
 
 /* line 17, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_theme-default.scss */
 a,
-.button, button {
+.button,
+button {
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -299,7 +384,8 @@ a,
 
 /* line 21, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_theme-default.scss */
 a:focus,
-.button:focus, button:focus {
+.button:focus,
+button:focus {
   text-decoration: none;
   outline: none;
 }
@@ -324,7 +410,11 @@ button {
 }
 
 /* line 39, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_theme-default.scss */
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "Yeseva One", cursive;
   color: #191d34;
 }
@@ -529,7 +619,7 @@ h3 {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to right, #5db2ff 0%, #65b4f9 24%, rgba(124, 185, 233, 0) 96%, rgba(125, 185, 232, 0) 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5db2ff', endColorstr='#007db9e8',GradientType=1 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5db2ff', endColorstr='#007db9e8', GradientType=1);
   /* IE6-9 */
   top: 0;
   left: 0;
@@ -551,6 +641,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 213, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_theme-default.scss */
   .pt-120 {
     padding-top: 60px;
@@ -558,6 +649,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 213, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_theme-default.scss */
   .pt-120 {
     padding-top: 100px;
@@ -645,6 +737,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 298, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_theme-default.scss */
   .section_padding {
     padding-top: 60px;
@@ -653,6 +746,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 298, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_theme-default.scss */
   .section_padding {
     padding-top: 80px;
@@ -678,6 +772,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 1, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_btn.scss */
   .boxed-btn {
     font-size: 15px;
@@ -1040,7 +1135,7 @@ h3 {
   z-index: 1;
   font-family: "Yeseva One", cursive;
   line-height: 1.3;
- 
+
 }
 
 /* line 9, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_section_title.scss */
@@ -1048,7 +1143,7 @@ h3 {
   position: relative;
   display: inline-block;
   z-index: 2;
-  
+
 }
 
 /* line 13, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_section_title.scss */
@@ -1066,6 +1161,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 2, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_section_title.scss */
   .section_title h3 {
     font-size: 25px;
@@ -1074,6 +1170,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 2, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_section_title.scss */
   .section_title h3 {
     font-size: 36px;
@@ -1082,6 +1179,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 34, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_section_title.scss */
   .section_title h3 br {
     display: none;
@@ -1097,6 +1195,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 45, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_section_title.scss */
   .section_title p br {
     display: none;
@@ -1109,6 +1208,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 53, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_section_title.scss */
   .mb-100 {
     margin-bottom: 40px;
@@ -1121,6 +1221,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 59, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_section_title.scss */
   .mb-55 {
     margin-bottom: 40px;
@@ -1128,6 +1229,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 4, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_slick-nav.scss */
   .mobile_menu {
     position: absolute;
@@ -1166,6 +1268,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 35, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_slick-nav.scss */
   .slicknav_menu .slicknav_nav a i {
     display: none;
@@ -1173,6 +1276,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 35, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_slick-nav.scss */
   .slicknav_menu .slicknav_nav a i {
     display: none;
@@ -1204,6 +1308,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 12, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_slick-nav.scss */
   .slicknav_menu {
     margin-right: 0px;
@@ -1279,20 +1384,22 @@ h3 {
   width: 100%;
   top: 0;
   z-index: 9;
-  padding: 0 100px 50px 100px;
+  padding: 0 0 0 0;
 }
 
 @media (max-width: 767px) {
+
   /* line 1, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area {
-    padding: 0 10px 10px 10px;
+    padding: 0 0 0 0;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 1, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area {
-    padding: 0 10px 10px 10px;
+    padding: 0 0 0 0;
   }
 }
 
@@ -1314,6 +1421,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 16, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area .main-header-area {
     right: 15px;
@@ -1323,6 +1431,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 16, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area .main-header-area {
     right: 15px;
@@ -1332,6 +1441,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 16, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area .main-header-area {
     right: 60px;
@@ -1340,6 +1450,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 56, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area .main-header-area .logo img {
     width: 100px;
@@ -1347,6 +1458,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 56, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area .main-header-area .logo img {
     width: 100px;
@@ -1407,6 +1519,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 90, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area .main-header-area .Appointment .book_btn a {
     padding: 12px 20px;
@@ -1439,6 +1552,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 108, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area .main-header-area .main-menu {
     display: none;
@@ -1446,6 +1560,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 108, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area .main-header-area .main-menu {
     display: none;
@@ -1473,6 +1588,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 130, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area .main-header-area .main-menu ul li a {
     font-size: 15px;
@@ -1480,6 +1596,7 @@ h3 {
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
+
   /* line 130, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area .main-header-area .main-menu ul li a {
     font-size: 15px;
@@ -1492,6 +1609,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 149, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area .main-header-area .main-menu ul li a i {
     display: none !important;
@@ -1499,6 +1617,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 149, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area .main-header-area .main-menu ul li a i {
     display: none !important;
@@ -1556,14 +1675,14 @@ h3 {
 }
 
 /* line 191, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
-.header-area .main-header-area .main-menu ul li:hover > .submenu {
+.header-area .main-header-area .main-menu ul li:hover>.submenu {
   opacity: 1;
   visibility: visible;
   top: 150%;
 }
 
 /* line 196, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
-.header-area .main-header-area .main-menu ul li:hover > a::before {
+.header-area .main-header-area .main-menu ul li:hover>a::before {
   opacity: 1;
   transform: scaleX(1);
 }
@@ -1591,6 +1710,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 206, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area .main-header-area.sticky {
     padding: 10px 10px;
@@ -1598,6 +1718,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 206, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area .main-header-area.sticky {
     padding: 10px 10px;
@@ -1610,6 +1731,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 230, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area .header-top_area {
     padding: 10px 0;
@@ -1622,6 +1744,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 235, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area .header-top_area .social_media_links {
     text-align: center;
@@ -1646,6 +1769,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 249, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area .header-top_area .short_contact_list {
     text-align: center;
@@ -1653,6 +1777,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 249, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area .header-top_area .short_contact_list {
     text-align: center;
@@ -1673,6 +1798,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 260, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_header.scss */
   .header-area .header-top_area .short_contact_list ul li a {
     margin-right: 0;
@@ -1688,25 +1814,28 @@ h3 {
 
 /* line 1, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_slider.scss */
 .slider_bg_1 {
-  background-image: url(../img/main-slider-1.jpeg);
+  background-image: url(/img/main-slider-1.jpeg);
 }
 
 /* line 4, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_slider.scss */
 .slider_bg_2 {
-  background-image: url(../img/main-slider-2.0.jpeg);
+  background-image: url(/img/main-slider-2.0.jpeg);
 }
+
 .slider_bg_2 {
-  background-image: url(../img/main-slider-3.jpeg);
+  background-image: url(/img/main-slider-3.jpeg);
 }
+
 /* line 8, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_slider.scss */
 .slider_area .single_slider {
-  height: 960px;
+  height: 1085px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 @media (max-width: 767px) {
+
   /* line 8, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_slider.scss */
   .slider_area .single_slider {
     height: 500px;
@@ -1714,6 +1843,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 8, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_slider.scss */
   .slider_area .single_slider {
     height: 700px;
@@ -1721,7 +1851,7 @@ h3 {
 }
 
 /* line 20, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_slider.scss */
-.slider_area .single_slider .slider_text > span {
+.slider_area .single_slider .slider_text>span {
   text-transform: capitalize;
   font-size: 26px;
   color: #fff;
@@ -1741,6 +1871,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 28, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_slider.scss */
   .slider_area .single_slider .slider_text h3 {
     font-size: 33px;
@@ -1749,6 +1880,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 28, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_slider.scss */
   .slider_area .single_slider .slider_text h3 {
     font-size: 55px;
@@ -1765,6 +1897,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 43, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_slider.scss */
   .slider_area .single_slider .slider_text p {
     font-size: 16px;
@@ -1772,6 +1905,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 43, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_slider.scss */
   .slider_area .single_slider .slider_text p {
     font-size: 16px;
@@ -1784,6 +1918,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 1, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .offers_area {
     padding-bottom: 40px;
@@ -1796,6 +1931,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 6, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .offers_area.padding_top {
     padding-top: 40px;
@@ -1803,6 +1939,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 6, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .offers_area.padding_top {
     padding-top: 80px;
@@ -1810,6 +1947,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 6, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .offers_area.padding_top {
     padding-top: 80px;
@@ -1817,6 +1955,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 18, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .offers_area .single_offers {
     margin-bottom: 30px;
@@ -1850,6 +1989,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 30, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .offers_area .single_offers h3 {
     font-size: 18px;
@@ -1857,6 +1997,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 38, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .offers_area .single_offers h3 br {
     display: none;
@@ -1923,6 +2064,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 87, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .video_area {
     padding: 100px 0;
@@ -1930,6 +2072,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 87, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .video_area {
     padding: 100px 0;
@@ -1953,6 +2096,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 102, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .video_area .video_area_inner h3 {
     font-size: 30px;
@@ -1987,6 +2131,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 131, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .features_room {
     padding-top: 40px;
@@ -1994,6 +2139,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 131, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .features_room {
     padding-top: 0;
@@ -2008,6 +2154,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 142, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .features_room .rooms_here .single_rooms {
     width: 100%;
@@ -2032,7 +2179,7 @@ h3 {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, #ffffff 0%, #000000 77%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
   /* IE6-9 */
   z-index: 1;
   opacity: .5;
@@ -2067,6 +2214,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 175, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .features_room .rooms_here .single_rooms .room_thumb .room_heading {
     padding: 20px;
@@ -2074,6 +2222,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 175, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .features_room .rooms_here .single_rooms .room_thumb .room_heading {
     padding: 20px;
@@ -2099,6 +2248,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 195, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .features_room .rooms_here .single_rooms .room_thumb .room_heading h3 {
     font-size: 20px;
@@ -2151,6 +2301,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 238, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .forQuery {
     padding: 60px 0;
@@ -2158,6 +2309,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 238, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .forQuery {
     padding: 100px 0;
@@ -2165,6 +2317,7 @@ h3 {
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 238, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .forQuery {
     padding: 100px 0;
@@ -2172,6 +2325,7 @@ h3 {
 }
 
 @media (min-width: 1200px) and (max-width: 1500px) {
+
   /* line 238, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .forQuery {
     padding: 100px 0;
@@ -2185,6 +2339,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 253, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .forQuery .Query_border {
     padding: 20px 20px;
@@ -2205,6 +2360,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 262, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .forQuery .Query_border p {
     margin-bottom: 20px;
@@ -2214,6 +2370,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 262, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .forQuery .Query_border p {
     font-size: 18px;
@@ -2226,6 +2383,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 276, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .forQuery .Query_border .phone_num {
     text-align: center;
@@ -2265,6 +2423,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 310, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .instragram_area .single_instagram {
     width: 100%;
@@ -2272,6 +2431,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 310, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
   .instragram_area .single_instagram {
     width: 50%;
@@ -2380,7 +2540,7 @@ h3 {
 
 /* line 397, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_offers.scss */
 .gj-picker-md {
-  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: .04em;
@@ -2409,6 +2569,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 9, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_footer.scss */
   .footer .footer_top {
     padding-top: 60px;
@@ -2430,6 +2591,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 16, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_footer.scss */
   .footer .footer_top .footer_widget {
     margin-bottom: 40px;
@@ -2437,6 +2599,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 16, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_footer.scss */
   .footer .footer_top .footer_widget {
     margin-bottom: 30px;
@@ -2465,6 +2628,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 40, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_footer.scss */
   .footer .footer_top .footer_widget .footer_title {
     margin-bottom: 20px;
@@ -2481,6 +2645,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 54, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_footer.scss */
   .footer .footer_top .footer_widget .footer_logo {
     margin-bottom: 20px;
@@ -2707,6 +2872,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 231, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_footer.scss */
   .footer .socail_links {
     margin-top: 20px;
@@ -2749,31 +2915,31 @@ h3 {
 
 /* line 1, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_bradcam.scss */
 .breadcam_bg {
-  background-image: url(../img/banner/bradcam.png);
+  background-image: url(/img/main-slider-3.jpeg);
 }
 
 /* line 4, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_bradcam.scss */
 .breadcam_bg_1 {
-  background-image: url(../img/banner/bradcam2.png);
+  background-image: url(/img/banner/bradcam2.png);
 }
 
 /* line 7, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_bradcam.scss */
 .breadcam_bg_2 {
-  background-image: url(../img/banner/bradcam3.png);
+  background-image: url(/img/banner/bradcam3.png);
 }
 
 /* line 10, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_bradcam.scss */
 .bradcam_area {
   background-size: cover;
   background-position: center center;
-  height: 400px;
+  height: 1085px;
   background-repeat: no-repeat;
 }
 
 /* line 15, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_bradcam.scss */
 .bradcam_area.overlay::before {
   background: #c5c85c;
-  opacity: .8;
+  opacity: .5;
 }
 
 /* line 19, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_bradcam.scss */
@@ -2786,6 +2952,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 19, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_bradcam.scss */
   .bradcam_area h3 {
     font-size: 35px;
@@ -2820,6 +2987,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 43, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_bradcam.scss */
   .popup_box {
     padding: 40px 25px;
@@ -2842,6 +3010,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 52, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_bradcam.scss */
   .popup_box h3 {
     font-size: 30px;
@@ -3001,7 +3170,8 @@ h3 {
 }
 
 /* line 190, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_bradcam.scss */
-.gj-picker-md div[role="navigator"] div:first-child, .gj-picker-md div[role="navigator"] div:last-child {
+.gj-picker-md div[role="navigator"] div:first-child,
+.gj-picker-md div[role="navigator"] div:last-child {
   width: 42px;
   height: 42px;
   text-align: center;
@@ -3014,7 +3184,8 @@ h3 {
 }
 
 /* line 198, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_bradcam.scss */
-.gj-picker-md div[role="navigator"] div:first-child i, .gj-picker-md div[role="navigator"] div:last-child i {
+.gj-picker-md div[role="navigator"] div:first-child i,
+.gj-picker-md div[role="navigator"] div:last-child i {
   font-size: 16px;
   line-height: 42px;
   position: relative;
@@ -3022,18 +3193,21 @@ h3 {
 }
 
 /* line 204, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_bradcam.scss */
-.gj-picker-md div[role="navigator"] div:first-child:hover, .gj-picker-md div[role="navigator"] div:last-child:hover {
+.gj-picker-md div[role="navigator"] div:first-child:hover,
+.gj-picker-md div[role="navigator"] div:last-child:hover {
   color: #fff;
   background: #000;
 }
 
 /* line 209, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_bradcam.scss */
-.gj-textbox-md:focus, .gj-textbox-md:active {
+.gj-textbox-md:focus,
+.gj-textbox-md:active {
   border-bottom: 1px solid rgba(0, 0, 0, 0.42);
 }
 
 /* line 217, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_bradcam.scss */
-.gj-datepicker-md [role="right-icon"], .gj-timepicker-md [role="right-icon"] {
+.gj-datepicker-md [role="right-icon"],
+.gj-timepicker-md [role="right-icon"] {
   position: absolute;
   right: 0px;
   top: 0px;
@@ -3055,6 +3229,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 2, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_reason.scss */
   .reson_area .single_reson {
     margin-bottom: 30px;
@@ -3062,6 +3237,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 2, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_reason.scss */
   .reson_area .single_reson {
     margin-bottom: 40px;
@@ -3079,7 +3255,7 @@ h3 {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  overflow:hidden;
+  overflow: hidden;
   width: 300px;
 }
 
@@ -3114,7 +3290,7 @@ h3 {
   padding: 30px 33px 23px 40px;
   left: 80px;
   margin-left: 30px;
-  
+
 }
 
 /* line 34, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_reason.scss */
@@ -3176,21 +3352,191 @@ h3 {
   transform: scale(1.1);
 }
 
-/* line 1, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_latest_activites.scss */
-.video_bg_1 {
-  background-image: url(../img/team1-ANIMATION.gif);
-  background-repeat: no-repeat;
+/* team section */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+.team {
   
-  background-position: center center ;
-  background-size: cover;
+  padding-bottom: 70px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+
 }
+
+.team .section-title {
+  text-align: left;
+  margin-bottom: 20px;
+  
+  
+}
+
+.team__item {
+  height: 500px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  
+  
+}
+
+.team__item:after {
+  
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(79, 96, 34, 0.8);
+  content: "";
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: all, 0.5s, ease-out, .5s;
+  -o-transition: all, 0.5s, ease-out, .5s;
+  transition: all, 0.5s, ease-out, .5s
+}
+
+.team__item:hover:after {
+  opacity: 2
+}
+
+.team__item:hover .team__text {
+  top: 0
+}
+
+.team__item:hover .team__text .team__title {
+  border-bottom: 1px solid rgba(183, 183, 183, 0.2);
+  padding: 0 0 26px;
+  margin-bottom: 26px;
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  bottom: initial;
+  opacity: 1;
+  visibility: visible;
+  backdrop-filter: blur(0px);
+}
+
+.team__item:hover .team__text p {
+  top: 0;
+  opacity: 2;
+  visibility: visible;
+  -webkit-transition: all .5s ease .3s;
+  -o-transition: all .5s ease .3s;
+  transition: all .5s ease .3s
+}
+
+.team__item:hover .team__text .team__social {
+  opacity: 1;
+  visibility: visible;
+  bottom: 34px;
+  -webkit-transition: all .5s ease .5s;
+  -o-transition: all .5s ease .5s;
+  transition: all .5s ease .5s
+}
+
+.team__text {
+  height: 100%;
+  top: 361px;
+  position: relative;
+  padding: 35px 30px 30px;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  
+}
+
+.team__text .team__title {
+  border-bottom: 1px solid rgba(183, 183, 183, 0.2);
+  padding: 0px 0px 26px 0px;
+  margin-bottom: 26px;
+  position: relative;
+  backdrop-filter: blur(10px); 
+}
+
+.team__text .team__title h4 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 6px
+}
+
+.team__text .team__title span {
+  font-size: 15px;
+  color: #88C417
+}
+
+.team__text p {
+  color: #ffffff;
+  line-height: 26px;
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  top: 50px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  font-size: 14px;
+}
+
+.team__text .team__social {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 0 30px;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden
+}
+
+.team__text .team__social a {
+  display: inline-block;
+  font-size: 20px;
+  color: #fff;
+  margin-right: 34px;
+  -webkit-transition: all, .3s;
+  -o-transition: all, .3s;
+  transition: all, .3s
+}
+
+.team__text .team__social a:last-child {
+  margin-right: 0
+}
+
+.team__text .team__social a:hover {
+  color: #71a314
+}
+
+@media(max-width:768px) {
+ 
+  .team__item {
+    height: 450px;
+    backdrop-filter: blur(10px); 
+  }
+  .team__text {
+    padding: 25px 20px 20px;
+    font-size: 20px;
+    overflow: scroll;
+    backdrop-filter: blur(10px); 
+  }
+}
+
+/* teams sec ends */
 
 /* line 7, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_latest_activites.scss */
 .latest_activites_area {
   background: rgba(60, 199, 143, 0.06);
   position: relative;
+  top:-200px;
 }
-
+@media (max-width: 767px){
+  .latest_activites_area {
+    background: rgba(60, 199, 143, 0.06);
+    position: relative;
+   top: 40px;
+  }
+}
 /* line 10, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_latest_activites.scss */
 .latest_activites_area .video_activite {
   position: absolute;
@@ -3201,6 +3547,7 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 10, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_latest_activites.scss */
   .latest_activites_area .video_activite {
     display: none !important;
@@ -3208,6 +3555,7 @@ h3 {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 10, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_latest_activites.scss */
   .latest_activites_area .video_activite {
     display: none !important;
@@ -3241,6 +3589,7 @@ h3 {
   opacity: .3;
   content: '';
 }
+
 /* line 45, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_latest_activites.scss */
 .latest_activites_area .activites_info {
   padding-right: 0px;
@@ -3250,9 +3599,23 @@ h3 {
 }
 
 @media (max-width: 767px) {
+
   /* line 45, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_latest_activites.scss */
   .latest_activites_area .activites_info {
     padding: 50px 15px;
+  }
+}
+.img13{
+  border-radius: 2%;
+  display: block;
+
+}
+@media (max-width: 767px) {
+ .ABOUTUS {
+    margin-top: 300px;
+  }
+  .img13{
+    display: none;
   }
 }
 
@@ -3261,11 +3624,11 @@ h3 {
   margin-bottom: 0px;
   margin-top: 0px;
   font-weight: 500;
-  font-family:'Times New Roman', Times, serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 /* line 62, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_latest_activites.scss */
- 
+
 
 /* line 6, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_causes.scss */
 .popular_causes_area.cause_details .single_cause .thumb img {
@@ -3279,25 +3642,27 @@ h3 {
   -o-transition: 0.3s;
   transition: 0.3s;
 }
+
 .popular_causes_area.cause_details .single_cause .thumb1 img {
 
-width: 45%;
--webkit-transform: scale(1);
--moz-transform: scale(1);
--ms-transform: scale(1);
-transform: scale(1);
--webkit-transition: 0.3s;
--moz-transition: 0.3s;
--o-transition: 0.3s;
-transition: 0.3s;
-border: 1 solid#000;
-border-radius: 50px 50px 0 0;
+  width: 45%;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  border: 1 solid#000;
+  border-radius: 50px 50px 0 0;
 }
+
 .popular_causes_area.cause_details .single_cause .thumb2 img {
 
   width: 45%;
   margin-top: -385px;
-  margin-left:600px ;
+  margin-left: 600px;
   height: 440px;
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -3310,7 +3675,8 @@ border-radius: 50px 50px 0 0;
   border: 1 solid#000;
   border-radius: 50px;
   padding-bottom: 54px;
-  }
+}
+
 /* line 12, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_causes.scss */
 .popular_causes_area.cause_details .single_cause .causes_content {
   -webkit-box-shadow: none;
@@ -3320,6 +3686,7 @@ border-radius: 50px 50px 0 0;
 }
 
 @media (max-width: 767px) {
+
   /* line 12, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_causes.scss */
   .popular_causes_area.cause_details .single_cause .causes_content {
     padding: 50px 0 0 0;
@@ -3364,6 +3731,7 @@ border-radius: 50px 50px 0 0;
 }
 
 @media (max-width: 767px) {
+
   /* line 32, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_causes.scss */
   .popular_causes_area.cause_details .single_cause .causes_content .custom_progress_bar .progress .progress-bar .progres_count {
     width: 40px;
@@ -3381,6 +3749,7 @@ border-radius: 50px 50px 0 0;
 }
 
 @media (max-width: 767px) {
+
   /* line 53, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_causes.scss */
   .popular_causes_area.cause_details .single_cause .causes_content .balance {
     margin-bottom: 0;
@@ -3402,6 +3771,7 @@ border-radius: 50px 50px 0 0;
 }
 
 @media (max-width: 767px) {
+
   /* line 67, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_causes.scss */
   .popular_causes_area.cause_details .single_cause .causes_content h4 {
     font-size: 25px;
@@ -3549,6 +3919,7 @@ border-radius: 50px 50px 0 0;
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+
   /* line 2, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_counter.scss */
   .counter_area .counter_bg {
     padding: 64px 25px;
@@ -3594,6 +3965,7 @@ border-radius: 50px 50px 0 0;
 }
 
 @media (max-width: 767px) {
+
   /* line 2, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_voolenteer.scss */
   .our_volunteer_area .single_volenteer {
     margin-bottom: 30px;
@@ -3601,6 +3973,7 @@ border-radius: 50px 50px 0 0;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
   /* line 2, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_voolenteer.scss */
   .our_volunteer_area .single_volenteer {
     margin-bottom: 30px;
@@ -3706,6 +4079,7 @@ border-radius: 50px 50px 0 0;
 }
 
 @media (max-width: 767px) {
+
   /* line 3, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_news.scss */
   .news__area .single__blog {
     display: block !important;
@@ -3719,6 +4093,7 @@ border-radius: 50px 50px 0 0;
 }
 
 @media (max-width: 767px) {
+
   /* line 12, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_news.scss */
   .news__area .single__blog .thum img {
     width: 100%;
@@ -3762,8 +4137,8 @@ border-radius: 50px 50px 0 0;
 }
 
 /* line 6, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_donation.scss */
-[type="radio"]:checked + label,
-[type="radio"]:not(:checked) + label {
+[type="radio"]:checked+label,
+[type="radio"]:not(:checked)+label {
   position: relative;
   padding-left: 20px;
   cursor: pointer;
@@ -3774,8 +4149,8 @@ border-radius: 50px 50px 0 0;
 }
 
 /* line 17, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_donation.scss */
-[type="radio"]:checked + label:before,
-[type="radio"]:not(:checked) + label:before {
+[type="radio"]:checked+label:before,
+[type="radio"]:not(:checked)+label:before {
   content: '';
   position: absolute;
   left: 0;
@@ -3790,8 +4165,8 @@ border-radius: 50px 50px 0 0;
 }
 
 /* line 32, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_donation.scss */
-[type="radio"]:checked + label:after,
-[type="radio"]:not(:checked) + label:after {
+[type="radio"]:checked+label:after,
+[type="radio"]:not(:checked)+label:after {
   content: '';
   width: 8px;
   height: 8px;
@@ -3805,14 +4180,14 @@ border-radius: 50px 50px 0 0;
 }
 
 /* line 45, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_donation.scss */
-[type="radio"]:not(:checked) + label:after {
+[type="radio"]:not(:checked)+label:after {
   opacity: 0;
   -webkit-transform: scale(0);
   transform: scale(0);
 }
 
 /* line 50, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_donation.scss */
-[type="radio"]:checked + label:after {
+[type="radio"]:checked+label:after {
   opacity: 1;
   -webkit-transform: scale(1);
 }
@@ -3878,6 +4253,7 @@ border-radius: 50px 50px 0 0;
 }
 
 @media (max-width: 767px) {
+
   /* line 96, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_donation.scss */
   .make_donation_area .donation_form .single_amount .fixed_donat {
     display: block !important;
@@ -3903,6 +4279,7 @@ border-radius: 50px 50px 0 0;
 }
 
 @media (max-width: 767px) {
+
   /* line 115, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_donation.scss */
   .make_donation_area .donation_form .single_amount .fixed_donat .single_doonate {
     width: 33.33%;
@@ -3937,7 +4314,8 @@ border-radius: 50px 50px 0 0;
 }
 
 /* line 16, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_contact.scss */
-.contact-info__icon i, .contact-info__icon span {
+.contact-info__icon i,
+.contact-info__icon span {
   color: #8f9195;
   font-size: 27px;
 }
@@ -4059,6 +4437,7 @@ border-radius: 50px 50px 0 0;
 }
 
 @media (max-width: 991px) {
+
   /* line 133, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_contact.scss */
   .contact-section {
     padding: 70px 0 40px;
@@ -4066,6 +4445,7 @@ border-radius: 50px 50px 0 0;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
   /* line 133, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_contact.scss */
   .contact-section {
     padding: 80px 0 50px;
@@ -4799,7 +5179,7 @@ h6 {
 }
 
 /* line 619, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.default-switch input + label {
+.default-switch input+label {
   position: absolute;
   top: 1px;
   left: 1px;
@@ -4816,7 +5196,7 @@ h6 {
 }
 
 /* line 632, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.default-switch input:checked + label {
+.default-switch input:checked+label {
   left: 19px;
 }
 
@@ -4843,7 +5223,7 @@ h6 {
 }
 
 /* line 655, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.primary-switch input + label {
+.primary-switch input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -4854,7 +5234,7 @@ h6 {
 }
 
 /* line 663, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.primary-switch input + label:before {
+.primary-switch input+label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -4873,7 +5253,7 @@ h6 {
 }
 
 /* line 677, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.primary-switch input + label:after {
+.primary-switch input+label:after {
   content: "";
   position: absolute;
   top: 1px;
@@ -4891,12 +5271,12 @@ h6 {
 }
 
 /* line 693, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.primary-switch input:checked + label:after {
+.primary-switch input:checked+label:after {
   left: 19px;
 }
 
 /* line 696, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.primary-switch input:checked + label:before {
+.primary-switch input:checked+label:before {
   background: #c5c85c;
 }
 
@@ -4923,7 +5303,7 @@ h6 {
 }
 
 /* line 720, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.confirm-switch input + label {
+.confirm-switch input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -4934,7 +5314,7 @@ h6 {
 }
 
 /* line 728, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.confirm-switch input + label:before {
+.confirm-switch input+label:before {
   content: "";
   position: absolute;
   left: 0;
@@ -4953,7 +5333,7 @@ h6 {
 }
 
 /* line 742, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.confirm-switch input + label:after {
+.confirm-switch input+label:after {
   content: "";
   position: absolute;
   top: 1px;
@@ -4971,12 +5351,12 @@ h6 {
 }
 
 /* line 758, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.confirm-switch input:checked + label:after {
+.confirm-switch input:checked+label:after {
   left: 19px;
 }
 
 /* line 761, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.confirm-switch input:checked + label:before {
+.confirm-switch input:checked+label:before {
   background: #4cd3e3;
 }
 
@@ -5003,7 +5383,7 @@ h6 {
 }
 
 /* line 785, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.primary-checkbox input + label {
+.primary-checkbox input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -5017,7 +5397,7 @@ h6 {
 }
 
 /* line 798, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.primary-checkbox input:checked + label {
+.primary-checkbox input:checked+label {
   background: url(../img/elements/primary-check.png) no-repeat center center/cover;
   border: none;
 }
@@ -5045,7 +5425,7 @@ h6 {
 }
 
 /* line 822, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.confirm-checkbox input + label {
+.confirm-checkbox input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -5059,7 +5439,7 @@ h6 {
 }
 
 /* line 835, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.confirm-checkbox input:checked + label {
+.confirm-checkbox input:checked+label {
   background: url(../img/elements/success-check.png) no-repeat center center/cover;
   border: none;
 }
@@ -5087,7 +5467,7 @@ h6 {
 }
 
 /* line 859, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.disabled-checkbox input + label {
+.disabled-checkbox input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -5107,7 +5487,7 @@ h6 {
 }
 
 /* line 876, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.disabled-checkbox input:checked + label {
+.disabled-checkbox input:checked+label {
   background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
   border: none;
 }
@@ -5135,7 +5515,7 @@ h6 {
 }
 
 /* line 900, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.primary-radio input + label {
+.primary-radio input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -5149,7 +5529,7 @@ h6 {
 }
 
 /* line 913, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.primary-radio input:checked + label {
+.primary-radio input:checked+label {
   background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
   border: none;
 }
@@ -5177,7 +5557,7 @@ h6 {
 }
 
 /* line 937, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.confirm-radio input + label {
+.confirm-radio input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -5191,7 +5571,7 @@ h6 {
 }
 
 /* line 950, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.confirm-radio input:checked + label {
+.confirm-radio input:checked+label {
   background: url(../img/elements/success-radio.png) no-repeat center center/cover;
   border: none;
 }
@@ -5219,7 +5599,7 @@ h6 {
 }
 
 /* line 974, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.disabled-radio input + label {
+.disabled-radio input+label {
   position: absolute;
   left: 0;
   top: 0;
@@ -5239,7 +5619,7 @@ h6 {
 }
 
 /* line 991, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_elements.scss */
-.disabled-radio input:checked + label {
+.disabled-radio input:checked+label {
   background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
   border: none;
 }
@@ -5410,7 +5790,8 @@ h6 {
 }
 
 /* line 14, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-.blog_area a:hover, .blog_area a :hover {
+.blog_area a:hover,
+.blog_area a :hover {
   background: -webkit-linear-gradient(131deg, #c5c85c 0%, #c5c85c 99%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -5495,10 +5876,12 @@ h6 {
 }
 
 @media (max-width: 1199px) {
+
   /* line 74, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .single-blog .tag {
     margin-right: 8px;
   }
+
   /* line 98, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .single-blog .tag:after {
     display: none;
@@ -5511,6 +5894,7 @@ h6 {
 }
 
 @media (max-width: 800px) {
+
   /* line 24, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .single-blog {
     margin-bottom: 30px;
@@ -5536,6 +5920,7 @@ h6 {
 }
 
 @media (max-width: 1199px) {
+
   /* line 112, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .single-blog .single-blog-content {
     padding: 15px;
@@ -5550,6 +5935,7 @@ h6 {
 }
 
 @media (max-width: 1199px) {
+
   /* line 143, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .single-blog h4 {
     transition: all 300ms linear 0s;
@@ -5557,6 +5943,7 @@ h6 {
     padding-bottom: 14px;
     margin-bottom: 12px;
   }
+
   /* line 149, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .single-blog h4 a {
     font-size: 18px;
@@ -5580,6 +5967,7 @@ h6 {
 }
 
 @media (min-width: 992px) {
+
   /* line 160, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .full_image.single-blog .single-blog-content {
     bottom: 100px;
@@ -5741,7 +6129,7 @@ h6 {
 }
 
 /* line 358, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-.causes_item .causes_bottom a + a {
+.causes_item .causes_bottom a+a {
   border-color: #eeeeee;
   background: #fff;
   font-size: 14px;
@@ -5806,7 +6194,7 @@ h6 {
 }
 
 /* line 431, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-.tags .tag_btn + .tag_btn {
+.tags .tag_btn+.tag_btn {
   margin-left: 2px;
 }
 
@@ -5818,6 +6206,7 @@ h6 {
 }
 
 @media (min-width: 900px) {
+
   /* line 438, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .blog_categorie_area {
     padding-top: 80px;
@@ -5826,6 +6215,7 @@ h6 {
 }
 
 @media (min-width: 1100px) {
+
   /* line 438, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .blog_categorie_area {
     padding-top: 120px;
@@ -5904,6 +6294,7 @@ h6 {
 }
 
 @media (min-width: 768px) {
+
   /* line 529, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .blog_details {
     padding: 60px 30px 35px 35px;
@@ -5933,6 +6324,7 @@ h6 {
 }
 
 @media (min-width: 768px) {
+
   /* line 549, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .blog_details h2 {
     font-size: 24px;
@@ -5996,6 +6388,7 @@ h6 {
 }
 
 @media (min-width: 768px) {
+
   /* line 599, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .blog_item_img .blog_item_date {
     bottom: -20px;
@@ -6014,6 +6407,7 @@ h6 {
 }
 
 @media (min-width: 768px) {
+
   /* line 615, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .blog_item_img .blog_item_date h3 {
     font-size: 30px;
@@ -6028,6 +6422,7 @@ h6 {
 }
 
 @media (min-width: 768px) {
+
   /* line 627, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .blog_item_img .blog_item_date p {
     font-size: 18px;
@@ -6162,7 +6557,7 @@ h6 {
 }
 
 /* line 774, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-.blog_right_sidebar .post_category_widget .cat-list li + li {
+.blog_right_sidebar .post_category_widget .cat-list li+li {
   padding-top: 15px;
 }
 
@@ -6194,7 +6589,7 @@ h6 {
 }
 
 /* line 820, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
-.blog_right_sidebar .popular_post_widget .post_item + .post_item {
+.blog_right_sidebar .popular_post_widget .post_item+.post_item {
   margin-top: 20px;
 }
 
@@ -6339,6 +6734,7 @@ h6 {
 }
 
 @media (min-width: 768px) {
+
   /* line 1087, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .single-post-area .quote-wrapper {
     padding: 30px;
@@ -6353,6 +6749,7 @@ h6 {
 }
 
 @media (min-width: 768px) {
+
   /* line 1101, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .single-post-area .quotes {
     padding: 25px 25px 25px 30px;
@@ -6436,6 +6833,7 @@ h6 {
 }
 
 @media (max-width: 600px) {
+
   /* line 1182, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .single-post-area .blog-author {
     padding: 20px 8px;
@@ -6451,6 +6849,7 @@ h6 {
 }
 
 @media (max-width: 600px) {
+
   /* line 1191, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .single-post-area .blog-author img {
     margin-right: 15px;
@@ -6534,6 +6933,7 @@ h6 {
 }
 
 @media (max-width: 767px) {
+
   /* line 1240, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .single-post-area .navigation-area .nav-left {
     margin-bottom: 30px;
@@ -6576,6 +6976,7 @@ h6 {
 }
 
 @media (max-width: 991px) {
+
   /* line 1307, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .single-post-area .sidebar-widgets {
     padding-bottom: 0px;
@@ -6591,6 +6992,7 @@ h6 {
 }
 
 @media (max-width: 414px) {
+
   /* line 1314, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .comments-area {
     padding: 50px 8px;
@@ -6625,14 +7027,17 @@ h6 {
 }
 
 @media (max-width: 413px) {
+
   /* line 1354, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .comments-area .comment-list .single-comment h5 {
     font-size: 12px;
   }
+
   /* line 1358, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .comments-area .comment-list .single-comment .date {
     font-size: 11px;
   }
+
   /* line 1362, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .comments-area .comment-list .single-comment .comment {
     font-size: 10px;
@@ -6701,6 +7106,7 @@ h6 {
 }
 
 @media (max-width: 767px) {
+
   /* line 1428, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .comment-form .name {
     padding-right: 0px;
@@ -6714,6 +7120,7 @@ h6 {
 }
 
 @media (max-width: 991px) {
+
   /* line 1437, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog.scss */
   .comment-form .email {
     padding-left: 0px;
@@ -6790,6 +7197,7 @@ h6 {
 }
 
 @media (max-width: 576px) {
+
   /* line 2, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog_part.scss */
   .blog_part {
     margin-bottom: 0px;
@@ -6798,6 +7206,7 @@ h6 {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
   /* line 2, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog_part.scss */
   .blog_part {
     margin-bottom: 0px;
@@ -6806,6 +7215,7 @@ h6 {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
   /* line 2, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog_part.scss */
   .blog_part {
     margin-bottom: 0px;
@@ -6821,6 +7231,7 @@ h6 {
 }
 
 @media (max-width: 576px) {
+
   /* line 24, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog {
     margin-bottom: 140px;
@@ -6829,6 +7240,7 @@ h6 {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
   /* line 24, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog {
     margin-bottom: 140px;
@@ -6837,6 +7249,7 @@ h6 {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
   /* line 24, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog {
     margin-bottom: 140px;
@@ -6869,6 +7282,7 @@ h6 {
 }
 
 @media (max-width: 576px) {
+
   /* line 48, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card .card-body {
     padding: 15px;
@@ -6878,6 +7292,7 @@ h6 {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
   /* line 48, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card .card-body {
     padding: 15px;
@@ -6887,6 +7302,7 @@ h6 {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
   /* line 48, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card .card-body {
     padding: 20px;
@@ -6935,6 +7351,7 @@ h6 {
 }
 
 @media (max-width: 576px) {
+
   /* line 97, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card span {
     margin-bottom: 5px;
@@ -6943,6 +7360,7 @@ h6 {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
   /* line 97, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card span {
     margin-bottom: 5px;
@@ -6951,6 +7369,7 @@ h6 {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
   /* line 97, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card span {
     margin-bottom: 5px;
@@ -6959,6 +7378,7 @@ h6 {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
   /* line 97, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card span {
     margin-bottom: 5px;
@@ -6978,6 +7398,7 @@ h6 {
 }
 
 @media (max-width: 576px) {
+
   /* line 119, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card h5 {
     margin-bottom: 10px;
@@ -6985,6 +7406,7 @@ h6 {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
   /* line 119, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card h5 {
     margin-bottom: 10px;
@@ -6993,6 +7415,7 @@ h6 {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
   /* line 119, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card h5 {
     margin-bottom: 10px;
@@ -7000,6 +7423,7 @@ h6 {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
   /* line 119, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card h5 {
     margin-bottom: 10px;
@@ -7025,6 +7449,7 @@ h6 {
 }
 
 @media (max-width: 576px) {
+
   /* line 150, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card ul li {
     margin-right: 10px;
@@ -7032,6 +7457,7 @@ h6 {
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
+
   /* line 150, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card ul li {
     margin-right: 10px;
@@ -7039,6 +7465,7 @@ h6 {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+
   /* line 150, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card ul li {
     margin-right: 10px;
@@ -7046,6 +7473,7 @@ h6 {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
+
   /* line 150, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_blog_part.scss */
   .blog_part .single-home-blog .card ul li {
     margin-right: 10px;
@@ -7058,4 +7486,497 @@ h6 {
   font-size: 12px;
 }
 
-/*# sourceMappingURL=style.css.map */
+/* service page */
+
+@font-face {
+  font-family: 'ESL Legend';
+  src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.eot);
+  src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.eot#iefix) format("embedded-opentype"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.woff2) format("woff2"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.woff) format("woff"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.ttf) format("truetype"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Light.svg#eicon) format("svg");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'ESL Legend';
+  src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.eot);
+  src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.eot#iefix) format("embedded-opentype"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.woff2) format("woff2"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.woff) format("woff"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.ttf) format("truetype"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Regular.svg#eicon) format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'ESL Legend';
+  src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.eot);
+  src: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.eot#iefix) format("embedded-opentype"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.woff2) format("woff2"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.woff) format("woff"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.ttf) format("truetype"),
+    url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/fonts/legend/ESLLegend-Bold.svg#eicon) format("svg");
+  font-style: normal;
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+.ag-format-container {
+  width: 1160px;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.ag-timeline-block {
+  padding: 300px 0;
+}
+
+.ag-timeline_title-box {
+  padding: 0 0 30px;
+
+  text-align: center;
+}
+
+.ag-timeline_tagline {
+  font-size: 40px;
+  color: rgb(84, 89, 95);
+}
+
+.ag-timeline_title {
+  background-image: url(https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-fill-color: transparent;
+  color: transparent;
+
+  font-size: 80px;
+}
+
+.ag-timeline_item {
+  margin: 0 0 50px;
+
+  position: relative;
+}
+
+.ag-timeline_item:nth-child(2n) {
+  text-align: right;
+}
+
+.ag-timeline {
+  display: inline-block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.ag-timeline_line {
+  width: 2px;
+  background-color: #393935;
+
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  bottom: 0;
+
+  overflow: hidden;
+
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.ag-timeline_line-progress {
+  width: 100%;
+  height: 20%;
+  background-color: #FF0;
+}
+
+.ag-timeline-card_box {
+  padding: 0 0 20px 50%;
+}
+
+.ag-timeline_item:nth-child(2n) .ag-timeline-card_box {
+  padding: 0 50% 20px 0;
+}
+
+.ag-timeline-card_point-box {
+  display: inline-block;
+  margin: 0 14px 0 -28px;
+}
+
+.ag-timeline_item:nth-child(2n) .ag-timeline-card_point-box {
+  margin: 0 -28px 0 14px;
+}
+
+.ag-timeline-card_point {
+  height: 50px;
+  line-height: 50px;
+  width: 50px;
+  border: 3px solid #FF0;
+  background-color: #1d1d1b;
+
+  text-align: center;
+  font-family: 'ESL Legend', sans-serif;
+  font-size: 20px;
+  color: #FFF;
+
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.js-ag-active .ag-timeline-card_point {
+  color: #1d1d1b;
+  background-color: #FF0;
+}
+
+.ag-timeline-card_meta-box {
+  display: inline-block;
+}
+
+.ag-timeline-card_meta {
+  margin: 10px 0 0;
+
+  font-family: 'ESL Legend', sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  color: #FF0;
+}
+
+.ag-timeline-card_item {
+  display: inline-block;
+  width: 45%;
+  margin: -77px 0 0;
+  background-color: #282828;
+
+  opacity: 0;
+
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
+  -moz-box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
+  -o-box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, .5);
+
+  -webkit-transition: -webkit-transform .5s, opacity .5s;
+  -moz-transition: -moz-transform .5s, opacity .5s;
+  -o-transition: -o-transform .5s, opacity .5s;
+  transition: transform .5s, opacity .5s;
+
+  position: relative;
+}
+
+.ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item {
+  -webkit-transform: translateX(-200%);
+  -moz-transform: translateX(-200%);
+  -ms-transform: translateX(-200%);
+  -o-transform: translateX(-200%);
+  transform: translateX(-200%);
+}
+
+.ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
+  -webkit-transform: translateX(200%);
+  -moz-transform: translateX(200%);
+  -ms-transform: translateX(200%);
+  -o-transform: translateX(200%);
+  transform: translateX(200%);
+}
+
+.js-ag-active.ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item,
+.js-ag-active.ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
+  opacity: 1;
+
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.ag-timeline-card_arrow {
+  height: 18px;
+  width: 18px;
+  margin-top: 20px;
+  background-color: #282828;
+
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.ag-timeline_item:nth-child(2n+1) .ag-timeline-card_arrow {
+  margin-left: calc(-18px / 2);
+  margin-right: calc(-18px / 2);
+}
+
+.ag-timeline_item:nth-child(2n) .ag-timeline-card_arrow {
+  margin-left: -10px;
+
+  right: auto;
+  left: 0;
+}
+
+.ag-timeline-card_img {
+  width: 100%;
+}
+
+.ag-timeline-card_info {
+  padding: 20px 30px;
+}
+
+.ag-timeline-card_title {
+  display: none;
+  margin: 10px 0 0;
+
+  font-family: 'ESL Legend', sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  color: #FF0;
+}
+
+.ag-timeline-card_desc {
+  line-height: 1.45;
+
+  font-size: 16px;
+  color: #FFF;
+}
+
+
+@media only screen and (max-width: 979px) {
+  .ag-timeline_line {
+    left: 30px;
+  }
+
+  .ag-timeline_item:nth-child(2n) {
+    text-align: left;
+  }
+
+  .ag-timeline-card_box,
+  .ag-timeline_item:nth-child(2n) .ag-timeline-card_box {
+    padding: 0 0 20px;
+  }
+
+  .ag-timeline-card_meta-box {
+    display: none;
+  }
+
+  .ag-timeline-card_point-box,
+  .ag-timeline_item:nth-child(2n) .ag-timeline-card_point-box {
+    margin: 0 0 0 8px;
+  }
+
+  .ag-timeline-card_point {
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+  }
+
+  .ag-timeline-card_item {
+    width: auto;
+    margin: -65px 0 0 75px
+  }
+
+  .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_item,
+  .ag-timeline_item:nth-child(2n) .ag-timeline-card_item {
+    -webkit-transform: translateX(200%);
+    -moz-transform: translateX(200%);
+    -ms-transform: translateX(200%);
+    -o-transform: translateX(200%);
+    transform: translateX(200%);
+  }
+
+  .ag-timeline_item:nth-child(2n+1) .ag-timeline-card_arrow {
+    right: auto;
+    left: 0;
+  }
+
+  .ag-timeline-card_title {
+    display: block;
+  }
+
+  .ag-timeline-card_arrow {
+    margin-top: 12px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+
+  .ag-timeline-card_img {
+    height: auto;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .ag-timeline_title {
+    font-size: 60px;
+  }
+
+  .ag-timeline-card_info {
+    padding: 10px 15px;
+  }
+
+  .ag-timeline-card_desc {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 479px) {}
+
+@media (min-width: 768px) and (max-width: 979px) {
+  .ag-format-container {
+    width: 750px;
+  }
+
+}
+
+@media (min-width: 980px) and (max-width: 1161px) {
+  .ag-format-container {
+    width: 960px;
+  }
+
+}
+
+/* service page end */
+
+
+.cards {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 32px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+.card {
+  background: tra;
+  width: 30%;
+  border-radius: 8px;
+  margin: 0 3% 20px 0%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+  flex-flow: column;
+  box-shadow: 0 0 4px -2px #444;
+}
+
+.card-title {
+  padding: 18px;
+  font-size: 18px;
+  color: black;
+  font-weight: 500;
+  display: flex;
+  text-align: center;
+}
+
+.card-image img {
+  display: block;
+  width: 100%;
+  max-height: 276px;
+}
+
+.card-prices {
+  background-color: #b8bc2f;
+  color: white;
+  border-radius: 0 0 8px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 300;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  margin-top: auto;
+}
+
+
+.price-sale {
+  font-size: 24px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  border-right: 1px solid #fff;
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row;
+  flex-flow: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+
+}
+
+.price-org {
+  font-size: 14px;
+  padding: 16px;
+  background-color: #c5c85c;
+  border: none;
+  padding-bottom: 0;
+  margin-bottom: 1px;
+  margin-right: 1px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  padding: 30px;
+
+}
+
+.price-org:hover {
+  color: black;
+  background-color: #b5ba00;
+}
+
+@media all and (min-width: 600px) and (max-width: 1000px) {
+  .card {
+    width: calc(100% / 3 - 2%);
+  }
+}
+
+@media all and (min-width: 400px) and (max-width: 599px) {
+  .card {
+    width: calc(100% / 2 - 2%);
+  }
+}
+
+@media all and (max-width: 399px) {
+  .card {
+    width: calc(100% - 2%);
+  }
+}
